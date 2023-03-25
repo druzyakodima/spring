@@ -11,12 +11,11 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class StudentService implements IStudentService{
+public class StudentService implements IStudentService {
     private final StudentRepository studentRepository;
 
     public Student findById(Long id) {
-        Student student = studentRepository.findById(id).get();
-        return student;
+        return studentRepository.findById(id).get();
     }
 
     public List<Student> findAll() {
