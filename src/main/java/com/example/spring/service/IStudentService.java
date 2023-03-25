@@ -1,7 +1,6 @@
 package com.example.spring.service;
 
 import com.example.spring.entities.Student;
-
 import java.util.List;
 
 public interface IStudentService {
